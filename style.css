@@ -1,0 +1,402 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*MY code*/
+*{
+  text-decoration: none;
+}
+
+main {
+  padding-top: 100px;
+}
+@font-face {
+    src: url(fonts/collegerion/Collegier.ttf);
+    font-family: sakthi;
+}
+body{
+  background-color: #f3f3f3;
+}
+
+
+header{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: #fff;
+  width: 100%;
+  height: 100px;
+}
+header .logo{
+  font-family: sakthi;
+  font-size: 27px;
+  color: #111;
+  font-weight: 600px;
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  padding: 10px 0px;
+}
+header nav ul{
+  display: block;
+  margin: 0px auto;
+  width: fit-content;
+
+}
+header nav ul li{
+  text-decoration: none;
+  display: inline-block;
+  list-style: none;
+  float: left;
+  padding: 0 16px;
+}
+header nav ul li a{
+  font-family: sakthi;
+  font-size: 20px;
+  color: #111;
+  font-weight: lighter;
+}
+
+header .cases{
+  display: none;
+}
+@media only screen and (min-width: 1000px) {
+  header .logo{
+    margin: 31px 0;
+    text-align: left;
+    line-height: 38px;
+    padding: 0px 20px 0px 40px;
+    border-right: 3px solid #111;
+    float:left;
+  }
+  header nav ul{
+
+    margin: 30px 0 ;
+    float: left;
+
+  }
+  header nav ul li{
+    text-decoration: none;
+    display: inline-block;
+    list-style: none;
+    float: left;
+    padding: 0 16px;
+  }
+  header nav ul li a{
+    font-family: sakthi;
+    font-size: 20px;
+    color: #111;
+    font-weight: lighter;
+    line-height: 40px;
+  }
+  header .cases{
+    display: block;
+    border: 1px solid #111;
+    float: right;
+    margin: 30px 0;
+    line-height: 38px;
+    padding: 0px 20px;
+    margin-right: 40px;
+  }
+
+}
+
+.banner{
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url(images/ban.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: table;
+}
+.ex{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+h2{
+  text-align: center;
+  font-size: 60px;
+  color: #fff;
+  line-height: 70px;
+  font-weight: 900px;
+  text-shadow: 2px 2px 4px #111;
+}
+h1{
+  font-size: 28px;
+  font-style: italic;
+  color: #fff;
+  font-weight: 100;
+  line-height: 40px;
+  text-shadow: 2px 2px 4px #111;
+
+}
+.links div{
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+  height: 100px;
+  background-color:fs red;
+}
+.links div h3{
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 100;
+  color: #111;
+  font-weight: 700;
+  line-height: 100px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 1000px)  {
+  .banner{
+    height: 500px;
+    background-size: cover;
+    width: 100%;
+    background-position: 0 -230px;
+    overflow: hidden;
+    }
+  .banner h1{
+    width: 490px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .wrapper{
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .links div{
+    margin: 16px 16px 0;
+    width: calc(100% - 32px);
+    height: 220px;
+    background-color: red;
+    float: left;
+  }
+
+  .index-boxlink-square{
+    width: calc(25% - 32px) !important;
+  }
+  .index-boxlink-rectangle{
+    width: calc(50% - 32px) !important;
+
+  }
+  .links{
+    padding-bottom: 20px;
+    overflow: hidden;
+  }
+  .links div h3{
+    line-height: 220px;
+  }
+}
+/*cases*/
+.cases-links .wrapper div {
+  width: 230px;
+  height: 230px;
+  margin: 10px 20px 10px 0px;
+  background-color: #e3e3e3;
+  overflow: hidden;
+  float:left;
+   }
+   .cases-links {
+     margin-bottom: 20px;
+     overflow: hidden;;
+   }
+   .ui{
+     color:#111;
+     text-align: left;
+   }
+   .cases-links .cases-link p{
+     padding-top: 45%;
+     text-align: center;
+     font-size: 16px;
+     color: #fff;
+     font-weight: 900px;
+     text-shadow: 2px 2px 4px #111;
+     text-transform: uppercase;
+
+   }
+   .main-end{
+     width: 1000px;
+     height: 150px;
+     margin: 0 auto;
+     text-align: center;
+     background-color: #e3e3e3;
+
+   }
+   .main-end h3{
+     padding-top: 59px;
+   }
+   iframe{
+     display: block;
+    margin: 0 auto;
+    padding: 30px 0;
+   }
+   .case-vid h2{
+    color: #111;
+   }
+   .case-vid p{
+     column-count: 3;
+     column-gap: 30px;
+   }
+/*FOOTER*/
+footer{
+  width: calc(100% - 40px) ;
+  padding: 40px 0px 40px 40px;
+  margin-top: 20px;
+  margin-right: 0px;
+  background-color: #111;
+  background-size: cover;
+  overflow: hidden;
+}
+
+footer ul{
+  width: fit-content;
+  padding-left: 20px;
+  float: left;
+
+}
+footer ul li{
+  display: block;
+  list-style: none;
+}
+footer ul li a {
+  font-family: sakthi;
+  font-size: 20px;
+  font-weight: lighter;
+  clear: both;
+   color: red;
+   line-height: 42px;s
+}
+img{
+  width: 60px;
+  margin-right: 0px;
+  float: right;
+}
+.links-cases{
+  display: none;
+
+}
+.yo{
+  width: 60px;
+  float: right;
+}
+.yo img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 1000px)  {
+  .links-cases{
+    display: block;
+  }
+  .wrapper{
+    width: 1000px;
+    margin: 0 auto;
+  }
+  footer ul li p{
+    font-family: sakthi;
+    font-size: 20px;
+    font-weight: lighter;
+    clear: both;
+     color: red;
+     line-height: 42px;s
+  }
+  footer ul{
+
+    padding-right: : 30px;
+
+
+  }
+
+
+}
